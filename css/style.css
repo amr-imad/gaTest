@@ -81,7 +81,13 @@ body {
   color: #6b6a75;
   text-align: left;
   /* mark flag */
+  max-width: 2080px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
   background-color: #dfe0df;
+  margin: auto;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -10242,6 +10248,7 @@ h6,
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-color: #fff;
   min-height: 600px;
 }
 
@@ -10525,10 +10532,18 @@ h6,
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  body {
+  }
   .elegant-search-container {
-    padding: 1rem;
+    border-radius: 20px;
+    padding: 0px;
     margin-top: 0px;
-    width: auto;
+    position: static;
+    width: 90vw;
+    top: 35vh;
+    background-color: white;
+    margin: auto;
+    align-self: center;
   }
 
   .elegant-search-input {
